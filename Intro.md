@@ -11,7 +11,6 @@ Table of Contents
 <a name="overview"></a>
 ## Overview
 
-<img src="img/scheduling-workflow.png" alt="Scheduling Workflow" width="100%"/>
 
 Brief description for the interactive app goes here.
 
@@ -19,6 +18,8 @@ This app was developed and maintained by [Dr Yukai Zou](https://www.southampton.
 
 <a name="logistics"></a>
 ## Workflow and Expected Logistics
+
+<img src="img/scheduling-workflow.png" alt="Scheduling Workflow" width="100%"/>
 
 Expected logistics are:
 
