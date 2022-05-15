@@ -54,4 +54,4 @@ Link: https://scheduler.labarchives.com/
 ## Acknowledgments
 
 <a href="https://www.southampton.ac.uk/"><img src="img/UoS-new-logo-590.png" alt="University of Southampton" width=250 hspace="20"/></a>
-<a href="https://www.uhs.nhs.uk/health-professionals/medical-physics/mri-physics"><img src="uhsnhslogo.jpg" alt="img/UHS NHS Foundation Trust" width=350 hspace="20"/></a>
+<a href="https://www.uhs.nhs.uk/health-professionals/medical-physics/mri-physics"><img src="img/uhsnhslogo.jpg" alt="UHS NHS Foundation Trust" width=350 hspace="20"/></a>
