@@ -1,4 +1,4 @@
-<img src="img/booking-system-overview.png" alt="Overview" width="100%"/>
+<img src="img/booking-system-overview.png" alt="Overview" width="50%"/>
 
 Table of Contents
 =================
@@ -31,7 +31,7 @@ Instructions for how to create an account can be accessed [here](https://sotnir-
 
 After signing in you may or may not view the calendar of research MRI slots immediately. If not, you will need to click on your name at the top right and select "Switch Organizations": 
 
-<img src="img/switch-org.png" alt="Switch Organization" width="100%"/>
+<img src="img/switch-org.png" alt="Switch Organization" width="50%"/>
 
 This will open up a window where you can choose which organization to view. Select “Southampton Research MRI”, and you should be able to view the calendar.
 
