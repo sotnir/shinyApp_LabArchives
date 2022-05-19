@@ -3,18 +3,44 @@
 Table of Contents
 =================
  * [Overview](#overview)
- * [Workflow and Expected Logistics](#logistics)
  * [Quickstart](#How-to)
-     1. [Get Report](#How-to-1-get-report)
+     1. [Sign In](#How-to-1-sign-in)
+     2. [Get Report](#How-to-2-get-report)
+ * [Workflow and Expected Logistics](#logistics)
  * [Acknowledgments](#acknowledgments)
  
 <a name="overview"></a>
 ## Overview
 
+This interactive app serves as a tool to track and quantify the utility of university research slots on the 3T MRI, through creating diagrams based on the report from [LabArchives](https://sotnir-handbook.readthedocs.io/en/latest/projects-soton/mri-scanner.html).
 
-Brief description for the interactive app goes here.
+This app was developed and maintained by Dr Yukai Zou (Y.Zou@soton.ac.uk).
 
-This app was developed and maintained by [Dr Yukai Zou](https://www.southampton.ac.uk/cndng/about/yukai-zou.page).
+
+<a name="How-to"></a>
+## Quickstart
+
+<a name="How-to-1-sign-in"></a>
+### 1. Sign In
+
+You should already obtain an account and have access to the research MRI booking system:
+
+ - Link: https://scheduler.labarchives.com/
+
+Instructions for how to create an account can be accessed [here](https://sotnir-handbook.readthedocs.io/en/latest/projects-soton/mri-scanner.html).
+
+After signing in you may or may not view the calendar of research MRI slots immediately. If not, you will need to click on your name at the top right and select "Switch Organizations": 
+
+<img src="img/switch-org.png" alt="Switch Organization" width="100%"/>
+
+This will open up a window where you can choose which organization to view. Select “Southampton Research MRI”, and you should be able to view the calendar.
+
+<a name="How-to-2-get-report"></a>
+### 2. Get Report
+
+To create new report, follow the steps below:
+
+<img src="img/booking-system-quickstart.png" alt="Quickstart" width="100%"/>
 
 <a name="logistics"></a>
 ## Workflow and Expected Logistics
@@ -37,18 +63,6 @@ Expected logistics are:
    - Research team shall deletes the existing one and make a new reservation
    - Research team shall shall not update the approved reservation to a new date
    - **But scanning team could help. Communicate closely between scanning/research team**
-
-<a name="How-to"></a>
-## Quickstart
-
-<a name="How-to-1-get-report"></a>
-### 1. Get Report
-
-You should already obtain an account and have access to the research MRI booking system. Instructions for how to do so can be accessed [here](https://sotnir-handbook.readthedocs.io/en/latest/projects-soton/mri-scanner.html).
-
-Link: https://scheduler.labarchives.com/
-
-<img src="img/booking-system-quickstart.png" alt="Quickstart" width="100%"/>
 
 <a name="acknowledgments"></a>
 ## Acknowledgments
