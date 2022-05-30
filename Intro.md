@@ -40,12 +40,12 @@ This will open up a window where you can choose which organization to view. Sele
 
 To create new report, follow the steps below:
 
-<img src="img/booking-system-quickstart.png" alt="Quickstart" width="100%"/>
+<img src="img/booking-system-quickstart.png" alt="Quickstart" width="50%"/>
 
 <a name="logistics"></a>
 ## Workflow and Expected Logistics
 
-<img src="img/scheduling-workflow.png" alt="Scheduling Workflow" width="100%"/>
+<img src="img/scheduling-workflow.png" alt="Scheduling Workflow" width="50%"/>
 
 Expected logistics are:
 
