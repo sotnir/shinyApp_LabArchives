@@ -36,3 +36,15 @@ To launch the app locally, first clone this github repo:
 ```
 git clone https://github.com/yukaizou2015/shinyApp_LabArchives.git
 ```
+
+In RStudio, open `shinyApp_LabArchives.R`. Uncomment the line below to set the path of working directory:
+```{r}
+# setwd("/path/to/shinyApp_LabArchives/")
+```
+
+Install dependent packages by running the following command in console (assuming that none of the packages has been installed before):
+```{r}
+install.packages(c("shiny", "shinythemes", "markdown, "plyr", "tidyverse", "reshape2", "RColorBrewer", "lubridate", "RColorBrewer"))
+```
+
+After the installation is finished, run the script and the app should be launching.
