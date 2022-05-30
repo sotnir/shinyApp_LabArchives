@@ -1,4 +1,5 @@
 # Set working directory
+# setwd("/path/to/shinyApp_LabArchives/")
 
 # Load packages
 library(shiny); library(shinythemes); library(markdown); library(plyr); library(tidyverse); library(reshape2); library(RColorBrewer); library(lubridate); library(RColorBrewer)
@@ -28,8 +29,9 @@ navbarPage("Menu", id = "myNavbarPage",
                                  
                                  selectInput("select1", 
                                         h3("Select Type:"),
-                                        choices = list("Utility by Type"  = 1, 
-                                        "Monthly Utility" = 2),
+                                        choices = list("Utility by Type (bar)"  = 1, 
+                                                       "Utility by Type (pie)"  = 2, 
+                                        "Monthly Utility" = 3),
                                         selected = 1),
                                  
                                  # Button: Plot
@@ -108,22 +110,32 @@ server <- function(input, output, session) {
                 })
                 
                 output$report_ggplot <- renderUI({
-                        renderPlot(expr = if (input$select1 == 1) {
+                        renderPlot(height=600, width=800, expr = if (input$select1 == 1) {
                                 dat_ggplot() %>% ggplot(aes(x = Type , y = Hours)) + 
                                         geom_col(aes(fill=Type), col="black") +
                                         scale_fill_brewer(palette="Set1") +
                                         geom_text(aes(label = Hours), vjust = -0.5) +
+                                        theme(text = element_text(size = 20),
+                                              axis.text.x = element_text(angle = 45, hjust=0.95, vjust=1)) +
                                         ylab("Hours") + 
                                         guides(fill=F)
                         }
                         else if (input$select1 == 2) {
+                                dat_ggplot() %>% ggplot(aes(x = "", y = Hours_percent, fill=Type)) +
+                                        geom_bar(stat="identity", width=1, col="white") +
+                                        coord_polar("y", start=0) +
+                                        scale_fill_brewer(palette="Set1") +
+                                        theme_void()
+                        }
+                        else if (input$select1 == 3) {
                                 dat_ggplot() %>% filter(grepl("University Research|UHS Research", Type)) %>%
                                         # ggplot(aes(x = Month, y = Hours_pct_month)) +
                                         ggplot(aes(x = Month, y = Hours)) +
                                         geom_col(aes(fill=Type), col="black") +
                                         scale_fill_brewer(palette="Set1") +
                                         geom_text(aes(label = Hours), vjust = -0.5) +
-                                        theme(text = element_text(size = 20)) +
+                                        theme(text = element_text(size = 20),
+                                              axis.text.x = element_text(angle = 90, vjust=0.5)) +
                                         scale_x_date(date_breaks = "1 month", date_labels="%b-%Y") +
                                         facet_wrap(Type ~ .) +
                                         ylab("Hours") +
@@ -145,13 +157,13 @@ server <- function(input, output, session) {
                                             levels = c("University Research",
                                                "UHS Research & Development",
                                                "UHS Clinical", 
-                                                "Radiographer Not Available",
-                                               "Scanner Downtime", 
+                                               "Scanner Downtime",
+                                               "Radiographer Not Available",
                                                "Unused"))
                         
-                        if (input$select1 == 1) {
+                        if (input$select1 != 3) {
                                 df_2 <- df_TypeHours
-                        } else if (input$select1 == 2) {
+                        } else {
                                 dat_TypeHours$Month <- floor_date(dat_TypeHours$Date, "month")
                                 
                         df_2 <- ddply(dat_TypeHours, c("Month", "Type"), 
