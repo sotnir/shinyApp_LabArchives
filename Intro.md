@@ -59,10 +59,6 @@ Expected logistics are:
 4. Unused slots are released immediately so other studies may use
    - Scanning team reserves the right to remove slots that participant details are not provided timely
    - **Communicate closely between research/scanning team**
-5. (For rescheduling) In principle, research team proposes new reservation
-   - Research team shall deletes the existing one and make a new reservation
-   - Research team shall shall not update the approved reservation to a new date
-   - **But scanning team could help. Communicate closely between scanning/research team**
 
 <a name="acknowledgments"></a>
 ## Acknowledgments
