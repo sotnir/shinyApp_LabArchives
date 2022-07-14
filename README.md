@@ -14,9 +14,9 @@ Every 3 months.
 
 | Date              | Status                      |
 | ----------------- | --------------------------- |
-| 31 December 2021  | Completed (View Report)     |
-| 28 February 2022  | Completed (View Report)     |
-| 31 May 2022       | Scheduled                   |
+| 31 December 2021  | Completed     |
+| 28 February 2022  | Completed     |
+| 31 May 2022       | Completed                   |
 | 31 August 2022    | Scheduled                   |
 | 30 November 2022  | Scheduled                   |
 
