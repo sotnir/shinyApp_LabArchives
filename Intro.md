@@ -52,8 +52,8 @@ Expected logistics are:
 1. Constantly maintained calendar with most up-to-date availability
 2. Minimal information
    - Title: De-identified participant ID (e.g. NENAH001, ROAR001)
-   - Description: Hospital ID (e.g. Rhm1234567), participant initials (optional)
-   - No PHI/PII. No participant full name, parent’s full name, DOB, etc.
+   - Description: Participant initials (optional)
+   - To avoid confidentiality breach, NO NOT put any protected health information (PHI) or patient identifiable information (PII). No participant full name, parent’s full name, Hospital ID, Date of Birth, Home Address, Contact information etc.
    - Type of scan: University Research, etc. (for report and auditing purposes, see demo)
 3. All new reservations pending approval
 4. Unused slots are released immediately so other studies may use
