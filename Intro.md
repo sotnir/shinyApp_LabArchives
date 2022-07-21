@@ -53,7 +53,7 @@ Expected logistics are:
 2. Minimal information
    - Title: De-identified participant ID (e.g. NENAH001, ROAR001)
    - Description: Participant initials (optional)
-   - To avoid confidentiality breach, NO NOT put any protected health information (PHI) or patient identifiable information (PII). No participant full name, parent’s full name, Hospital ID, Date of Birth, Home Address, Contact information etc.
+   - To avoid confidentiality breach, DO NOT put any protected health information (PHI) or patient identifiable information (PII). No participant full name, parent’s full name, Hospital ID, Date of Birth, Home Address, Contact information etc.
    - Type of scan: University Research, etc. (for report and auditing purposes, see demo)
 3. All new reservations pending approval
 4. Unused slots are released immediately so other studies may use
