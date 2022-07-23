@@ -27,6 +27,8 @@ Every 3 months.
 
 ## Getting Started
 
+**IMPORTANT:** When launching the app it is your responsibility to make sure that both the data and computing resources are omplying with security requirements](https://mastering-shiny.org/scaling-security.html). Please avoid exposing any sensitive data such as any personally identifiable information.
+
 You will need to have R and RStudio installed in order to run the interactive app.
  - [Install R](https://www.r-project.org/)
  - [Install RStudio](https://www.rstudio.com/)
