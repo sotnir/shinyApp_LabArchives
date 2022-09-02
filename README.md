@@ -17,7 +17,7 @@ Every 3 months.
 | 31 December 2021  | Completed     |
 | 28 February 2022  | Completed     |
 | 31 May 2022       | Completed                   |
-| 31 August 2022    | Scheduled                   |
+| 31 August 2022    | Completed                   |
 | 30 November 2022  | Scheduled                   |
 
 ### Critical Control Points
@@ -59,4 +59,6 @@ install.packages(c("shiny",
                 )
 ```
 
-After the installation is finished, run the script and the app should be launching.
+After the installation is finished, run the script and the app should be launching:
+
+![](https://raw.githubusercontent.com/yukaizou2015/shinyApp_LabArchives/main/img/app-overview-gui.png)
