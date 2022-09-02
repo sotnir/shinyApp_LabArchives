@@ -1,5 +1,5 @@
 # Set working directory
-# setwd("/path/to/shinyApp_LabArchives/")
+setwd("~/Desktop/Southampton/3_UHS Medical Physics/Booking System/shinyApp_LabArchives/")
 
 # Load packages
 library(shiny); library(shinythemes); library(markdown); library(plyr); library(tidyverse); library(reshape2); library(RColorBrewer); library(lubridate); library(RColorBrewer)
@@ -98,11 +98,11 @@ server <- function(input, output, session) {
                 time_unused <- 15 * nWeeks
                 
                 output$plot_text2 <- renderText({
-                        paste0("First Date: ", date_first,
-                              "; Last Date: ", date_last,
-                              "; Number of Weeks: ", nWeeks,
+                        paste0("First date of record: ", date_first,
+                              "; Last date of record: ", date_last,
+                              "; Number of weeks: ", nWeeks,
                               "; Total Research-protected Time: ", 
-                              time_unused, " hours.")
+                              time_unused, " hours. IMPORTANT: Please deduct any holiday closure (e.g. Bank holidays).")
                 })
                 
                 output$file_value <- renderDataTable({
