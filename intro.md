@@ -1,3 +1,5 @@
+[Home](index.md)
+
 <img src="img/booking-system-overview.png" alt="Overview" width="50%"/>
 
 Table of Contents
