@@ -1,8 +1,8 @@
 [Intro](intro.md)
 
-# UoS/UHS Research MRI Booking System
+# Overview
 
-This github repository stores and manages the codes and descriptions of the shinyApp that generates diagrams of research utility for the MRI scanner at University Hospital Southampton NHS Foundation Trust, for report and auditing purposes.
+This website stores and manages the codes and descriptions of the shinyApp that generates diagrams of research utility for the MRI scanner at University Hospital Southampton NHS Foundation Trust, for report and auditing purposes.
 
 For queries, please contact Dr Yukai Zou (Y.Zou@soton.ac.uk).
 
