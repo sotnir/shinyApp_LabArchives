@@ -1,4 +1,4 @@
-[Intro](intro.md)
+[Intro](intro.md) | [Reports](reports.md)
 
 # Overview
 

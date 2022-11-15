@@ -1,4 +1,4 @@
-[Home](index.md)
+[Home](index.md) | [Reports](reports.md)
 
 <img src="img/booking-system-overview.png" alt="Overview" width="50%"/>
 
