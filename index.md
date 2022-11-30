@@ -16,10 +16,10 @@ Every 3 months.
 
 | Date              | Status                      |
 | ----------------- | --------------------------- |
-| 31 December 2021  | Completed     |
-| 28 February 2022  | Completed     |
-| 31 May 2022       | Completed                   |
-| 31 August 2022    | Completed                   |
+| 31 December 2021  | Completed ([View](reports/report-2021-10.pdf))    |
+| 28 February 2022  | Completed ([View](reports/report-2022-02.pdf))    |
+| 31 May 2022       | Completed ([View](reports/report-2022-05.pdf))    |
+| 31 August 2022    | Completed ([View](reports/report-2022-09.pdf))     |
 | 30 November 2022  | Scheduled                   |
 
 ### Critical Control Points
