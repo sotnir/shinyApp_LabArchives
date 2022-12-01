@@ -1,5 +1,5 @@
 # Set working directory
-setwd("~/Desktop/Southampton/3_UHS Medical Physics/Booking System/shinyApp_LabArchives/")
+setwd("~/Desktop/Southampton/2_UHS/Booking System/shinyApp_LabArchives/")
 
 # Load packages
 library(shiny); library(shinythemes); library(markdown); library(plyr); library(tidyverse); library(reshape2); library(RColorBrewer); library(lubridate); library(RColorBrewer)
@@ -19,7 +19,7 @@ navbarPage("Menu", id = "myNavbarPage",
                                  
                                  dateInput("date1",
                                            h3("Start Date:"),
-                                           value = "2022-01-01"
+                                           value = "2021-11-01"
                                            # value = ifelse(exists("input$file"), yes=min(read.csv(input$file$datapath)$Date), no="2022-01-01")
                                            ),
                                  
@@ -31,7 +31,8 @@ navbarPage("Menu", id = "myNavbarPage",
                                         h3("Select Type:"),
                                         choices = list("Utility by Type (bar)"  = 1, 
                                                        "Utility by Type (pie)"  = 2, 
-                                        "Monthly Utility" = 3),
+                                                       "Monthly Utility (hours)" = 3,
+                                                       "Monthly Utility (percentage)" = 4),
                                         selected = 1),
                                  
                                  # Button: Plot
@@ -56,7 +57,7 @@ navbarPage("Menu", id = "myNavbarPage",
                                                                 }")
                                            ),
                                           textOutput("plot_text2"),
-                                           uiOutput("report_ggplot"))
+                                           uiOutput("report_ggplot", width="100%"))
                                  )
                     )
            )
@@ -102,7 +103,7 @@ server <- function(input, output, session) {
                               "; Last date of record: ", date_last,
                               "; Number of weeks: ", nWeeks,
                               "; Total Research-protected Time: ", 
-                              time_unused, " hours. IMPORTANT: Please deduct any holiday closure (e.g. Bank holidays).")
+                              time_unused, " hours (IMPORTANT: This is an estimate and needs to manually deduct holiday closures, e.g. Bank holidays.)")
                 })
                 
                 output$file_value <- renderDataTable({
@@ -110,7 +111,7 @@ server <- function(input, output, session) {
                 })
                 
                 output$report_ggplot <- renderUI({
-                        renderPlot(height=600, width=800, expr = if (input$select1 == 1) {
+                        renderPlot(height=600,width=800,expr = if (input$select1 == 1) {
                                 dat_ggplot() %>% ggplot(aes(x = Type , y = Hours)) + 
                                         geom_col(aes(fill=Type), col="black") +
                                         scale_fill_brewer(palette="Set1") +
@@ -129,16 +130,28 @@ server <- function(input, output, session) {
                         }
                         else if (input$select1 == 3) {
                                 dat_ggplot() %>% filter(grepl("University Research|UHS Research", Type)) %>%
-                                        # ggplot(aes(x = Month, y = Hours_pct_month)) +
                                         ggplot(aes(x = Month, y = Hours)) +
                                         geom_col(aes(fill=Type), col="black") +
                                         scale_fill_brewer(palette="Set1") +
                                         geom_text(aes(label = Hours), vjust = -0.5) +
-                                        theme(text = element_text(size = 20),
+                                        theme(text = element_text(size = 15),
                                               axis.text.x = element_text(angle = 90, vjust=0.5)) +
-                                        scale_x_date(date_breaks = "1 month", date_labels="%b-%Y") +
+                                        scale_x_date(date_breaks = "2 months", date_labels="%b-%Y") +
                                         facet_wrap(Type ~ .) +
                                         ylab("Hours") +
+                                        guides(fill=F)
+                        }
+                        else if (input$select1 == 4) {
+                                dat_ggplot() %>% filter(grepl("University Research|UHS Research", Type)) %>%
+                                        ggplot(aes(x = Month, y = Hours_pct_month)) +
+                                        geom_col(aes(fill=Type), col="black") +
+                                        scale_fill_brewer(palette="Set1") +
+                                        geom_text(aes(label = Hours_pct_month), vjust = -0.5) +
+                                        theme(text = element_text(size = 15),
+                                              axis.text.x = element_text(angle = 90, vjust=0.5)) +
+                                        scale_x_date(date_breaks = "2 months", date_labels="%b-%Y") +
+                                        facet_wrap(Type ~ .) +
+                                        ylab("Time (%)") +
                                         guides(fill=F)
                         })
                 })
@@ -161,7 +174,7 @@ server <- function(input, output, session) {
                                                "Radiographer Not Available",
                                                "Unused"))
                         
-                        if (input$select1 != 3) {
+                        if (input$select1 < 3) {
                                 df_2 <- df_TypeHours
                         } else {
                                 dat_TypeHours$Month <- floor_date(dat_TypeHours$Date, "month")
