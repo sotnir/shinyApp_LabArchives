@@ -4,7 +4,7 @@
 
 This website stores and manages the codes and descriptions of the shinyApp that generates diagrams of research utility for the MRI scanner at University Hospital Southampton NHS Foundation Trust, for report and auditing purposes.
 
-For queries, please contact Dr Yukai Zou (Y.Zou@soton.ac.uk).
+For queries, please contact Dr Yukai Zou ([Y.Zou@soton.ac.uk](mailto:Y.Zou@soton.ac.uk)).
 
 ## Motivation
 
@@ -19,8 +19,8 @@ Every 3 months.
 | 31 December 2021  | Completed ([View](reports/report-2021-10.pdf))    |
 | 28 February 2022  | Completed ([View](reports/report-2022-02.pdf))    |
 | 31 May 2022       | Completed ([View](reports/report-2022-05.pdf))    |
-| 31 August 2022    | Completed ([View](reports/report-2022-09.pdf))     |
-| 30 November 2022  | Scheduled                   |
+| 31 August 2022    | Completed ([View](reports/report-2022-09.pdf))    |
+| 30 November 2022  | Completed ([View](reports/report-2022-12.pdf))    |
 
 ### Critical Control Points
  1. Increase/decrease of the slots used between report period
