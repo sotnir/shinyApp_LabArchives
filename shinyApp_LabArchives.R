@@ -2,7 +2,9 @@
 setwd("~/Desktop/Southampton/3_UHS Medical Physics/Booking System/shinyApp_LabArchives/")
 
 # Load packages
-library(shiny); library(shinythemes); library(markdown); library(plyr); library(tidyverse); library(reshape2); library(RColorBrewer); library(lubridate); library(RColorBrewer)
+list_packages <- c("shiny", "shinythemes", "markdown", "plyr", "tidyverse", "reshape2", "RColorBrewer", "lubridate")
+
+lapply(list_packages, library, character.only = TRUE)
 
 # Define UI ----
 if (interactive()) {

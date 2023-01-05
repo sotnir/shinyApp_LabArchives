@@ -46,17 +46,8 @@ In RStudio, open `shinyApp_LabArchives.R`. Uncomment the line below to set the p
 
 Install dependent packages by running the following command in console (assuming that none of the packages has been installed before):
 ```{r}
-install.packages(c("shiny", 
-                   "shinythemes", 
-                   "markdown, 
-                   "plyr", 
-                   "tidyverse", 
-                   "reshape2", 
-                   "RColorBrewer", 
-                   "lubridate", 
-                   "RColorBrewer"
-                  )
-                )
+list_packages <- c("shiny", "shinythemes", "markdown", "plyr", "tidyverse", "reshape2", "RColorBrewer", "lubridate")
+lapply(list_packages, install.packages, character.only = TRUE)
 ```
 
 After the installation is finished, run the script and the app should be launching:
