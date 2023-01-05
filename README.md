@@ -18,7 +18,7 @@ Every 3 months.
 | 28 February 2022  | Completed     |
 | 31 May 2022       | Completed                   |
 | 31 August 2022    | Completed                   |
-| 30 November 2022  | Scheduled                   |
+| 30 November 2022  | Completed                   |
 
 ### Critical Control Points
  1. Increase/decrease of the slots used between report period
