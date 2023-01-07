@@ -16,11 +16,13 @@ Every 3 months.
 
 | Date              | Status                      |
 | ----------------- | --------------------------- |
-| 31 December 2021  | Completed ([View](reports/report-2021-10.pdf))    |
-| 28 February 2022  | Completed ([View](reports/report-2022-02.pdf))    |
-| 31 May 2022       | Completed ([View](reports/report-2022-05.pdf))    |
-| 31 August 2022    | Completed ([View](reports/report-2022-09.pdf))    |
 | 30 November 2022  | Completed ([View](reports/report-2022-12.pdf))    |
+| 28 February 2023  | Scheduled                                         |
+| 31 May 2023       | Scheduled                                         |
+| 31 August 2023    | Scheduled                                         |
+| 30 November 2023  | Scheduled                                         |
+
+Please visit [Reports](reports.md) for full details.
 
 ### Critical Control Points
  1. Increase/decrease of the slots used between report period
