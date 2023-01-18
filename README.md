@@ -75,4 +75,4 @@ docker run -p 4000:6307 kai2019/shinyapp_labarchives
 
 and visit https://localhost:4000 to start using the app.
 
-![](https://raw.githubusercontent.com/yukaizou2015/shinyApp_LabArchives/main/img/app-overview-gui.png)
+<img src="img/app-overview-gui.png" alt="Overview" width="50%"/>
