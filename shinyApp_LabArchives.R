@@ -3,6 +3,7 @@ list_packages <- c("shiny", "shinythemes", "markdown", "plyr", "tidyverse", "res
 
 lapply(list_packages, library, character.only = TRUE)
 
+# Define UI ----
 ui <- fluidPage(
         theme = shinytheme("united"),
         titlePanel("UoS-UHS Research MRI Booking System"),
