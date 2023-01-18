@@ -14,47 +14,73 @@ There needs to establish an SOP workflow for scheduling, report, and auditing, t
 
 Every 3 months.
 
-| Date              | Status                      |
-| ----------------- | --------------------------- |
-| 30 November 2022  | Completed ([View](reports/report-2022-12.pdf))    |
-| 28 February 2023  | Scheduled                                         |
-| 31 May 2023       | Scheduled                                         |
-| 31 August 2023    | Scheduled                                         |
-| 30 November 2023  | Scheduled                                         |
+| Date             | Status                                         |
+| ---------------- | ---------------------------------------------- |
+| 30 November 2022 | Completed ([View](reports/report-2022-12.pdf)) |
+| 28 February 2023 | Scheduled                                      |
+| 31 May 2023      | Scheduled                                      |
+| 31 August 2023   | Scheduled                                      |
+| 30 November 2023 | Scheduled                                      |
 
 Please visit [Reports](reports.md) for full details.
 
 ### Critical Control Points
- 1. Increase/decrease of the slots used between report period
- 2. UoS slots are used for UHS clinical scans and UHS R&D purposes
- 3. Availability of research radiographer
+
+1.  Increase/decrease of the slots used between report period
+2.  UoS slots are used for UHS clinical scans and UHS R&D purposes
+3.  Availability of research radiographer
 
 ## Getting Started
 
 **IMPORTANT:** When launching the app it is your responsibility to make sure that both the data and computing resources are [complying with security requirements](https://mastering-shiny.org/scaling-security.html). Please avoid exposing any sensitive data such as any personally identifiable information.
 
-You will need to have R and RStudio installed in order to run the interactive app.
- - [Install R](https://www.r-project.org/)
- - [Install RStudio](https://www.rstudio.com/)
+## Getting Started
 
-To launch the app locally, first clone this github repo:
+**IMPORTANT:** When launching the app it is your responsibility to make sure that both the data and computing resources are [complying with security requirements](https://mastering-shiny.org/scaling-security.html). Please avoid exposing any sensitive data such as any personally identifiable information.
+
+You will need to have Docker Desktop installed and running in order to launch the app.
+
+- [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### 1. Working with an existing Docker image
+
+You can pull an existing Docker imaging from Docker Hub Container Image Library using the `docker pull` command:
 
 ```
-git clone https://github.com/yukaizou2015/shinyApp_LabArchives.git
+docker pull kai2019/shinyapp_labarchives
 ```
 
-In RStudio, open `shinyApp_LabArchives.R`. Uncomment the line below to set the path of working directory:
-```{r}
-# setwd("/path/to/shinyApp_LabArchives/")
+After pulling the image, you can use `docker run` command to launch the app. Use the `-p 4000:6307` argument:
+
+```
+docker run -p 4000:6307 kai2019/shinyapp_labarchives
 ```
 
-Install dependent packages by running the following command in console (assuming that none of the packages has been installed before):
+Visit https://localhost:4000 in a web browser to start using the app. To stop the container, hit Ctrl+C.
 
-```{r}
-list_packages <- c("shiny", "shinythemes", "markdown", "plyr", "tidyverse", "reshape2", "RColorBrewer", "lubridate")
-lapply(list_packages, install.packages, character.only = TRUE)
+### 2. Building a new Docker image locally
+
+To build the app locally, first, clone this github repo:
+
+```
+git clone https://github.com/sotnir/shinyApp_LabArchives.git
 ```
 
-After the installation is finished, run the script and the app should be launching:
+Go to the directory, and build the image from the `Dockerfile` by running:
 
-![](https://raw.githubusercontent.com/yukaizou2015/shinyApp_LabArchives/main/img/app-overview-gui.png)
+```
+cd shinyApp_LabArchives/
+docker build -t shinyapp_labarchives .
+```
+
+**Note:** Don't forget the `.` at the end which refers to the current directory where the `Dockerfile` resides.
+
+After the image is built, run this command:
+
+```
+docker run -p 4000:6307 kai2019/shinyapp_labarchives
+```
+
+and visit https://localhost:4000 to start using the app.
+
+<img src="img/app-overview-gui.png" alt="Overview" width="50%"/>
