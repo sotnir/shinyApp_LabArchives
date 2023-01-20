@@ -27,7 +27,7 @@ This app was developed and maintained by Dr Yukai Zou (Y.Zou@soton.ac.uk).
 
 You should already obtain an account and have access to the research MRI booking system:
 
- - Link: https://scheduler.labarchives.com/
+ - Link: [https://scheduler.labarchives.com/](https://scheduler.labarchives.com/)
 
 Instructions for how to create an account can be accessed [here](https://sotnir-handbook.readthedocs.io/en/latest/projects-soton/mri-scanner.html).
 
