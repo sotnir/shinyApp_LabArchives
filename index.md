@@ -78,7 +78,7 @@ docker build -t shinyapp_labarchives .
 After the image is built, run this command:
 
 ```
-docker run -p 4000:6307 kai2019/shinyapp_labarchives
+docker run -p 4000:6307 shinyapp_labarchives
 ```
 
 and visit https://localhost:4000 to start using the app.
