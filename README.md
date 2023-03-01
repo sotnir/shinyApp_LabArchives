@@ -15,7 +15,7 @@ Every 3 months.
 | Date             | Status    |
 | ---------------- | --------- |
 | 30 November 2022 | Completed |
-| 28 February 2023 | Scheduled |
+| 28 February 2023 | Completed |
 | 31 May 2023      | Scheduled |
 | 31 August 2023   | Scheduled |
 | 30 November 2023 | Scheduled |
