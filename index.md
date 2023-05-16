@@ -4,7 +4,7 @@
 
 This website stores and manages the codes and descriptions of the shinyApp that generates diagrams of research utility for the MRI scanner at University Hospital Southampton NHS Foundation Trust, for report and auditing purposes.
 
-For queries, please contact Dr Yukai Zou ([Y.Zou@soton.ac.uk](mailto:Y.Zou@soton.ac.uk)).
+For queries, please contact Dr Yukai Zou ([Yukai.Zou@uhs.nhs.uk](mailto:Yukai.Zou@uhs.nhs.uk)).
 
 ## Motivation
 
@@ -29,10 +29,6 @@ Please visit [Reports](reports.md) for full details.
 1.  Increase/decrease of the slots used between report period
 2.  UoS slots are used for UHS clinical scans and UHS R&D purposes
 3.  Availability of research radiographer
-
-## Getting Started
-
-**IMPORTANT:** When launching the app it is your responsibility to make sure that both the data and computing resources are [complying with security requirements](https://mastering-shiny.org/scaling-security.html). Please avoid exposing any sensitive data such as any personally identifiable information.
 
 ## Getting Started
 
