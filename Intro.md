@@ -7,6 +7,8 @@ Table of Contents
      1. [Sign In](#How-to-1-sign-in)
      2. [Get Report](#How-to-2-get-report)
  * [Workflow and Expected Logistics](#logistics)
+ * [Billing and Subscription](#billing)
+     1. [Get Pricing](#How-to-3-get-pricing)
  * [Acknowledgments](#acknowledgments)
  
 <a name="overview"></a>
@@ -59,6 +61,27 @@ Expected logistics are:
 4. Unused slots are released immediately so other studies may use
    - Scanning team reserves the right to remove slots that participant details are not provided timely
    - **Communicate closely between research/scanning team**
+
+<a name="billing"></a>
+## Billing and Subscription
+
+**IMPORTANT:** The LabArchives Scheduler subscription currently supports up to **12** users until 28 July 2023, thanks to funding from the University's Research Concordat. After the subscription expires, the scheduler will switch back to the Free Subscription plan, which has a 5-user limit.
+
+<a name="How-to-3-get-pricing"></a>
+### 1. Get Pricing
+
+To find out the latest pricing for the LabArchives Scheduler subscription, follow these steps:
+
+1. Log in to [LabArchives](https://scheduler.labarchives.com/)
+2. You should be in the "Southampton Research MRI" dashboard by default. If not, skip steps 3 and 4.
+3. On the navigation bar, click on your name and select "Switch Organizations" from the drop-down menu.
+4. Under "Switch to", click on your name to switch to your Free Subscription plan.
+5. On the navigation bar, click on the gear icon and select "Billing & Subscription" from the drop-down menu.
+6. Click on "Subscribe Now"
+7. Under "My Organization is", select "Academic/Nonprofit"
+9. Under "Start a Paid Subscription with...", adjust the number to update the quote
+
+That's it. You can now view the latest pricing for the LabArchives Scheduler subscription.
 
 <a name="acknowledgments"></a>
 ## Acknowledgments
