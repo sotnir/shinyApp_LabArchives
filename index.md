@@ -19,7 +19,7 @@ Every 3 months.
 | 30 November 2022 | Completed ([View](reports/report-2022-12.pdf)) |
 | 28 February 2023 | Completed ([View](reports/report-2023-02.pdf)) |
 | 31 May 2023      | Completed ([View](reports/report-2023-05.pdf)) |
-| 31 August 2023   | Scheduled                                      |
+| 31 August 2023   | Completed ([View](reports/report-2023-08.pdf)) |
 | 30 November 2023 | Scheduled                                      |
 
 Please visit [Reports](reports.md) for full details.
