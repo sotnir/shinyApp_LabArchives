@@ -10,7 +10,7 @@ Table of Contents
      2. [Get Report](#How-to-2-get-report)
  * [Workflow and Expected Logistics](#logistics)
  * [Billing and Subscription](#billing)
-     1. [Get Pricing](#How-to-3-get-pricing)
+     1. [How to get pricing](#How-to-3-get-pricing)
  * [Acknowledgments](#acknowledgments)
  
 <a name="overview"></a>
@@ -67,10 +67,14 @@ Expected logistics are:
 <a name="billing"></a>
 ## Billing and Subscription
 
-**IMPORTANT:** The LabArchives Scheduler subscription currently supports up to **12** users until 28 July 2023, thanks to funding from the University's Research Concordat. After the subscription expires, the scheduler will switch back to the Free Subscription plan, which has a 5-user limit.
+**IMPORTANT NOTICE:** Our LabArchives Scheduler subscription, which was funded by the University's Research Concordat, supported up to **12** users until July 28, 2023. Once the subscription expires, it will not automatically revert to the Free Subscription plan, which has a 5-user limit, even if reducing the number of users.
+
+As a temporary solution, the LabArchives support team has extended our subscription until Saturday, September 2nd. This extension is to ensure access to data for creating the August quarter report, which can be found [here](reports/report-2023-08.pdf).
+
+We are actively engaged in discussions to determine a more long-term solution, which encompasses various options, including renewing the Scheduler license and exploring alternative avenues.
 
 <a name="How-to-3-get-pricing"></a>
-### 1. Get Pricing
+### 1. How to get pricing
 
 To find out the latest pricing for the LabArchives Scheduler subscription, follow these steps:
 
